@@ -1,0 +1,29 @@
+body {
+    background: url(images/sitebg.png);
+}
+
+.container {
+    background-color: white;
+    width: 60%;
+    margin-top: 10px;
+    box-shadow: 5px 5px grey;
+}
+
+.header-text {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+button {
+    color: blue;
+}
+
+.collection {
+    width: 85%;
+    margin-bottom: 40px;
+}
+
+.main-site {
+    margin-left: 40px;
+}
