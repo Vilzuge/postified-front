@@ -39,7 +39,7 @@ class App extends React.Component {
       date: formattedTime
     }
 
-    if (this.state.newPost.length !== 0 && this.state.currentUser.length !== 0) {
+    if (this.state.newPost.length !== 0 && this.state.currentUser.length !== 0 && this.state.newPost.length <= 60 && this.state.currentUser.length <= 20) {
       postService
         .create(postObject)
         .then(newPost => {
@@ -52,6 +52,10 @@ class App extends React.Component {
       document.getElementById('textarea1').value = ''
       document.getElementById('textarea2').value = ''
     }
+    else {
+      alert("The post is empty or too long! (post max length 60 characters, username max length 20 characters)")
+    }
+
   }
 
   handleUserChange = (event) => {
